@@ -26,4 +26,31 @@ ui <- page_fillable(
     .detail-card p { margin-bottom: 0.4rem; }
   "))),
   
-  
+  layout_sidebar(
+    sidebar = sidebar(
+      tags$h4("Vancouver Food Programs"),
+      tags$hr(),
+      selectInput("meal_cost", "Meal Cost", choices = meal_cost_choices, selected = "All"),
+      tags$hr(),
+      selectizeInput("area", "Local Area", choices = area_choices, multiple = TRUE),
+      tags$hr(),
+      checkboxGroupInput(
+        "features", "Features",
+        choices = c(
+          "Delivery Available",
+          "Provides Hampers",
+          "Takeout Available",
+          "Wheelchair Accessible"
+        )
+      ),
+      open = "desktop"
+    ),
+    
+    layout_columns(
+      value_box("Total Locations",    textOutput("total_locations"),   theme = "primary"),
+      value_box("Free Programs (%)",  textOutput("free_prop"),         theme = "success"),
+      value_box("Accessibility (%)",  textOutput("accessibility_prop"), theme = "info"),
+      fill = FALSE
+    ),
+    
+    
