@@ -149,4 +149,23 @@ server <- function(input, output, session) {
     m
   })
   
+  # Capture marker clicks
+  observeEvent(input$map_marker_click, {
+    click <- input$map_marker_click
+    row_id <- click$id
+    dff <- filtered_df()
+    row <- dff[row.names(dff) == row_id, ]
+    if (nrow(row) > 0) selected_row(as.list(row[1, ]))
+  })
   
+  safe_val <- function(row, key) {
+    val <- row[[key]]
+    if (is.null(val) || (length(val) == 1 && is.na(val))) return("Not available")
+    as.character(val)
+  }
+  
+  output$selected_details <- renderUI({
+    row <- selected_row()
+    if (is.null(row)) return(p("Select a location on the map to view program details."))
+    
+    
