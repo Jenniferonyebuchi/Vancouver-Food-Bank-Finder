@@ -73,6 +73,10 @@ ui <- page_fillable(
         col_widths = 12
       ),
       col_widths = c(8, 4)
+    ),
+    tags$div(
+      style = "text-align: center; color: #6b7280; font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0.5rem;",
+      "Author: Jennifer Ezinne Onyebuchi | Last Updated: 2026-03-14"
     )
   )
 )
