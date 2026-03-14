@@ -184,4 +184,15 @@ server <- function(input, output, session) {
     )
   })
   
-  
+  output$contact_info <- renderUI({
+    row <- selected_row()
+    if (is.null(row)) return(p("Select a location to view contact information."))
+    
+    div(
+      p(strong("Email: "),        safe_val(row, "signup_email")),
+      p(strong("Phone Number: "), safe_val(row, "signup_phone_number"))
+    )
+  })
+}
+
+shinyApp(ui, server)
