@@ -168,4 +168,20 @@ server <- function(input, output, session) {
     row <- selected_row()
     if (is.null(row)) return(p("Select a location on the map to view program details."))
     
-    
+    div(class = "detail-card",
+        tags$h4(safe_val(row, "program_name")),
+        p(safe_val(row, "description")),
+        tags$hr(),
+        p(strong("Organization: "),  safe_val(row, "organization_name")),
+        p(strong("Address: "),        safe_val(row, "location_address")),
+        p(strong("Meal Cost: "),      safe_val(row, "meal_cost")),
+        p(strong("Program Status: "), safe_val(row, "program_status")),
+        p(strong("Provides Meals: "), safe_val(row, "provides_meals")),
+        p(strong("Provides Hampers: "),   safe_val(row, "provides_hampers")),
+        p(strong("Delivery Available: "), safe_val(row, "delivery_available")),
+        p(strong("Takeout Available: "),  safe_val(row, "takeout_available")),
+        p(strong("Wheelchair Accessible: "), safe_val(row, "wheelchair_accessible"))
+    )
+  })
+  
+  
