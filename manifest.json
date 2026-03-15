@@ -6,50 +6,7 @@
     "appmode": "shiny",
     "entrypoint": "src/app.R"
   },
-  "packages": {
-    "shiny": {
-      "Package": "shiny",
-      "Version": "1.13.0",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "bslib": {
-      "Package": "bslib",
-      "Version": "0.10.0",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "dplyr": {
-      "Package": "dplyr",
-      "Version": "1.2.0",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "jsonlite": {
-      "Package": "jsonlite",
-      "Version": "2.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "tidyr": {
-      "Package": "tidyr",
-      "Version": "1.3.2",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "leaflet": {
-      "Package": "leaflet",
-      "Version": "2.2.3",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "scales": {
-      "Package": "scales",
-      "Version": "1.4.0",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    }
-  },
+  "packages": null,
   "environment": {
     "r": {
       "requires": ">= 4.5.1, < 4.6.0",
