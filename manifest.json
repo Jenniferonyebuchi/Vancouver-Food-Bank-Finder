@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.5.1",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "src/app.R"
+  },
+  "packages": {
+    "shiny": {
+      "Package": "shiny",
+      "Version": "1.13.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "bslib": {
+      "Package": "bslib",
+      "Version": "0.10.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "jsonlite": {
+      "Package": "jsonlite",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidyr": {
+      "Package": "tidyr",
+      "Version": "1.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "leaflet": {
+      "Package": "leaflet",
+      "Version": "2.2.3",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "scales": {
+      "Package": "scales",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    }
+  },
+  "environment": {
+    "r": {
+      "requires": ">= 4.5.1, < 4.6.0",
+      "package_repository_resolution": "lockfile"
+    },
+    "environment_management": {
+      "r": true
+    }
+  },
+  "files": {
+    "src/app.R": {
+      "checksum": "9e49ec1fe7521c32f74a2b0d3360871a"
+    },
+    "data/food_program_data.csv": {
+      "checksum": "28c0a516853a433944b8230eaec4ae15"
+    },
+    "renv.lock": {
+      "checksum": "aaec656b1827a9a7560ff75591010e8a"
+    }
+  }
+}
