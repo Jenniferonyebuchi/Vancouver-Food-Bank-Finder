@@ -4,7 +4,6 @@
   "platform": "4.5.1",
   "metadata": {
     "appmode": "shiny",
-    "entrypoint": "src/app.R",
     "primary_rmd": null,
     "primary_html": null,
     "content_category": null,
@@ -1665,14 +1664,17 @@
     }
   },
   "files": {
-    "src/app.R": {
-      "checksum": "b036ade751d097d27dce95c7d19baec4"
+    "app.R": {
+      "checksum": "797f7b9085807d4411d38d9c46ba0dc5"
     },
     "data/food_program_data.csv": {
       "checksum": "28c0a516853a433944b8230eaec4ae15"
     },
     "renv.lock": {
       "checksum": "aaec656b1827a9a7560ff75591010e8a"
+    },
+    "src/app.R": {
+      "checksum": "b036ade751d097d27dce95c7d19baec4"
     }
   },
   "users": null
